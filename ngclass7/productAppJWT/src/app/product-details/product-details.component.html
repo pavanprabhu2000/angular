@@ -1,0 +1,29 @@
+<p>product-details works!</p>
+<p>products-detail works!</p>
+<div class="container">
+  <h2>cars</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">price</th>
+        <th scope="col">productImage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let p of result.products">
+        <td>{{p.productName}}</td>
+        <td>{{p.productDescription}}</td>
+        <td>{{p.productPrice}}</td>
+        <td><a href={{p.productImageURL}}>link</a></td>
+        <td><button type="button" class="btn btn-primary" [routerLink]="['/edit-product/',p._id]">Update</button></td>
+        <td><button type="button" class="btn btn-secondary"(click)="deleteProduct(p._id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+</div>

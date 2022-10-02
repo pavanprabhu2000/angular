@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" class="form-control" [(ngModel)]="searchString">
+      <button (click)="addUser()" class="btn btn-primary">Add verified_user</button>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+
+  <div class="row" *ngFor="let u of users | filter:searchString" >
+    <div class="col-md-12">
+      <div class="col-md-6">{{u.name}}</div>
+      <div class="col-md-6">{{u.id}}</div>
+      <div class="col-md-6">{{u.dob}}</div>
+    </div>
+
+  </div>
+</div>

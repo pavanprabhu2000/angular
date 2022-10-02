@@ -1,0 +1,6 @@
+<p>parent works!</p>
+
+<button (click) ="toggleChild()">Toggle child</button>
+<app-child *ngIf="flag" [userName]="userName"></app-child>
+<input type="text" [(ngModel)]="userName">
+{{userName}}

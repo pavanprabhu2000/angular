@@ -1,0 +1,30 @@
+<h3>this is the user component</h3>
+<div class="container">
+  <h3>user Deatil</h3>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr >
+        <th scope="col">Name</th>
+        <th scope="col">City</th>
+        <th scope="col">id</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Dob</th>
+        <th scope="col">Dob Age</th>
+        <th scope="col">city</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of users">
+        <td>{{p.name|uppercase}}</td>
+        <td>{{p.city|titlecase}}</td>
+        <td>{{p.id|json}}</td>
+        <td>{{p.sal|currency:'INR'}}</td>
+        <td>{{p.dob}}</td>
+        <td>{{p.dob|age}}</td>
+        <td>{{p.city|city|uppercase}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div> user info->>{{user1|json}}</div>

@@ -1,0 +1,22 @@
+<p>user works!</p>
+<h2>Person detail</h2>
+<div class="container">
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">id</th>
+        <th scope="col">Designation</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let p of persons">
+        <td>{{p.name}}</td>
+        <td>{{p.id}}</td>
+        <td>{{p.desig}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>

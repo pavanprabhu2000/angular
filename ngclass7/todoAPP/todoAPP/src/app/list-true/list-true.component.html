@@ -1,0 +1,26 @@
+<p>list-true works!</p>
+<p>list-false works!</p>
+<div class="container">
+  <h2>cars</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+
+        <th scope="col">User id</th>
+        <th scope="col">Id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor=" let p of result" >
+        <td *ngIf="p.completed==true">{{p.userId}}</td>
+        <td *ngIf="p.completed==true">{{p.id}}</td>
+        <td *ngIf="p.completed==true">{{p.title}}</td>
+        <td *ngIf="p.completed==true">{{p.completed}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

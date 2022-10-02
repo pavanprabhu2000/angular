@@ -1,0 +1,48 @@
+<p>edit-product works!</p>
+<p>edit-product works!</p>
+<div class="container">
+  <form #editData="ngForm" (ngSubmit)="editProduct(editData)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">name</label>
+      <input type="text" class="form-control"
+      ngModel
+       id="productName"
+       #productName="ngModel"
+       name="productName"
+       [(ngModel)]="selectedProduct.productName">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">desc</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="productDescription"
+       #productDescription="ngModel"
+        name="productDescription"
+        [(ngModel)]="selectedProduct.productDescription">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">price</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="productPrice"
+       #productPrice="ngModel"
+      name="productPrice"
+      [(ngModel)]="selectedProduct.productPrice">
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">url</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="productImageURL"
+       #productImageURL="ngModel"
+      name="productImageURL"
+      [(ngModel)]="selectedProduct.productImageURL">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div>
+        <ng-content select=".header"></ng-content>
+    </div>   
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Descriptive</th>
+            <th scope="col">id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let p of products">
+            <td>{{p.name}}</td>
+            <td>{{p.Price}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.id}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <ng-content select=".link"></ng-content>
+</div>

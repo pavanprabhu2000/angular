@@ -1,0 +1,26 @@
+<p>todo-list-board works!</p>
+<div class="container">
+  <h2>cars</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+
+        <th scope="col">User id</th>
+        <th scope="col">Id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let p of result">
+        <td>{{p.userId}}</td>
+        <td>{{p.id}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.completed}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+</div>

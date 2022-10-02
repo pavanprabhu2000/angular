@@ -1,0 +1,65 @@
+<p>edit-product works!</p>
+<div class="container">
+  <form #editData="ngForm" (ngSubmit)="editProduct(editData)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">id</label>
+      <input type="text" class="form-control"
+      ngModel
+       id="id"
+       #id="ngModel"
+       name="id"
+       [(ngModel)]="selectedProduct.id">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="name"
+       #name="ngModel"
+        name="name"
+        [(ngModel)]="selectedProduct.name">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Type</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="type"
+       #type="ngModel"
+      name="type"
+      [(ngModel)]="selectedProduct.type">
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">About</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="about"
+       #about="ngModel"
+      name="about"
+      [(ngModel)]="selectedProduct.about">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Availablity</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="availablity"
+       #availablity="ngModel"
+      name="availablity"
+      [(ngModel)]="selectedProduct.availablity">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Price</label>
+      <input type="text_fields" class="form-control"
+      ngModel
+       id="price"
+       #price="ngModel"
+      name="price"
+      [(ngModel)]="selectedProduct.price">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
